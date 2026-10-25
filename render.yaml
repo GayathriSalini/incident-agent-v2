@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: incident-agent
+    runtime: node
+    plan: free
+    buildCommand: echo "no build step"
+    startCommand: node server.mjs
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: LLM_KEY
+        sync: false          # paste your Groq key in the Render dashboard; it is never stored in git

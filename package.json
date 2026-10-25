@@ -1,0 +1,2 @@
+{ "name": "incident-agent-v2", "version": "1.0.0", "type": "module", "private": true,
+  "scripts": { "start": "node server.mjs", "check": "node sim.mjs" }, "engines": { "node": ">=20" } }
